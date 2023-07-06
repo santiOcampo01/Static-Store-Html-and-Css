@@ -1,0 +1,327 @@
+body {
+  margin:0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #7a7a7a8e;
+  justify-content: center;
+}
+
+
+/* CreeaciÃ³n de variables como color  */
+:root{
+  --verde-oscuro: #023c40;
+  --naranja-opaco: #e3c467d0;
+  --blanco: #ffffff;
+  --negro: #000000;
+  --azul: #256eff;
+}
+
+
+header {
+  display: flexbox;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--naranja-opaco);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  background-color: var(--naranja-opaco);
+  color: #023c40;
+  text-align: center;
+  font-size: 118%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.icons{
+  display: flex;
+  justify-content: end;
+
+}
+
+.icons a{
+  border: 2px solid var(--verde-oscuro);
+  padding: 5px 7px 5px 7px;
+  margin: 8px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: var(--verde-oscuro);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.icons a:hover{
+  color: rgb(215, 229, 15);
+  background-color: #023c40;
+  font-weight: 500;
+  border: 1px solid var(--blanco);
+  transition: all 0.5s;
+}
+
+.texto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  color: var(--verde-oscuro);
+}
+
+h1{
+  color: var(--verde-oscuro);
+  font-size: 200%;
+  margin: 0;
+  padding: 5px;
+  border-bottom: 2px solid var(--verde-oscuro);
+}
+h1:hover{
+  cursor: pointer;
+  color:rgba(226, 205, 89, 0.568);
+  background-color: #023c40;
+  border: 1px solid var(--blanco);
+  
+}
+a {
+  text-decoration: none;
+}
+
+h2{
+  margin: 8px 0 0 0;
+  font-size: 120%;
+}
+
+.seleccion{
+  text-align: center;
+  margin-top: 10em;
+  padding: 7px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.seleccion p {
+  color: var(--blanco);
+  background-color: var(--verde-oscuro);
+  padding: 7px;
+  width: 35%;
+  font-size: 1vw;
+  border-radius: 10px;
+  font-weight:lighter;
+}
+
+
+
+.seleccion p:hover{
+  color: var(--naranja-opaco);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.productos { 
+  background-color: #e3c46779;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;border-radius: 10px;
+  justify-content: space-around;
+  margin: 10px 30px 30px 30px;
+
+}
+
+/* ---------------------------------- */
+.caja {
+  display: flex;
+  margin: 30px 30px 0 30px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 3px 4px 20px 0px #000000b1;
+}
+
+.producto-1, .producto-2, .producto-3, .producto-4, .producto-5, .producto-6, .producto-7, .producto-8{
+width: 40vw;
+height: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items:  center;
+}
+
+.imagen1{
+  border: 5px rgb(6, 2, 2) solid;
+  margin-top: 26px;
+  height: 70%;
+  width: 76%;
+  background-image: url(./imagenes/YAMAHA\ SPORTS\ XTZ250\ 1.jpeg);
+  background-size: cover;
+  background-position: center center;
+
+}
+.imagen2{
+  border: 5px rgb(6, 2, 2) solid;
+    margin-top: 26px;
+    height: 70%;
+    width: 76%;
+  padding: 5px;
+  background-image: url(./imagenes/TemplateClassic-AKT-1.jpeg);
+  background-size: cover;
+  background-position:  center center;
+
+}
+.imagen3{
+  border: 5px rgb(6, 2, 2) solid;
+    margin-top: 26px;
+    height: 70%;
+    width: 76%;
+  padding: 5px;
+  background-image: url(./imagenes/bangkokmarch-suzuki-hayabusa-en-moter-show-el-th-international-motor-de-bangkok-thailand-marzo-tailandia-272724538.webp);
+  background-size: cover;
+  background-position:  center center;
+
+}
+.imagen4{
+  border: 5px rgb(6, 2, 2) solid;
+    margin-top: 26px;
+    height: 70%;
+    width: 76%;
+  padding: 5px;
+  background-image: url(./imagenes/maxresdefault.jpeg);
+  background-size: cover;
+  background-position:  center center;
+
+}
+.imagen5{
+  border: 5px rgb(6, 2, 2) solid;
+    margin-top: 26px;
+    height: 70%;
+    width: 76%;
+  padding: 5px;
+  background-image: url(./imagenes/HONDA-CBR600-3.webp);
+  background-size: cover;
+  background-position:  center center;
+
+}
+.imagen6{
+  border: 5px rgb(6, 2, 2) solid;
+    margin-top: 26px;
+    height: 70%;
+    width: 76%;
+  padding: 5px;
+  background-image: url(./imagenes/fz25_goat.png);
+  background-size: cover;
+  background-position:  center center;
+
+}
+.imagen7{
+  border: 5px rgb(6, 2, 2) solid;
+    margin-top: 26px;
+    height: 70%;
+    width: 76%;
+  padding: 5px;
+  background-image: url(./imagenes/D_NQ_NP_866495-MCO51119357316_082022-O.webp);
+  background-size: cover;
+  background-position:  center center;
+
+}
+.imagen8{
+  border: 5px rgb(6, 2, 2) solid;
+    margin-top: 26px;
+    height: 70%;
+    width: 76%;  padding: 5px;
+  background-image: url(./imagenes/suzuki-imagen-descriptiva-gixxer-250-suprema.jpeg);
+  background-size: cover;
+  background-position:  center center;
+
+}
+.caja:hover {
+  transform: scale(1.07);
+}
+
+
+.nombreProducto{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1vw
+}
+.precio{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size:2vw;
+  margin-top: 5px;
+
+}
+
+.boton {
+  background-color: rgba(226, 205, 89, 0.568);
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-top: 10PX;
+  border-radius: 15px;
+  box-shadow: 5px 5px 20px 5px #000000b1;
+  width: 20%;
+  height: 8%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.a{
+  color: rgb(5, 5, 5);
+  text-decoration: none;
+  
+}
+.boton:hover{
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #023c40;
+  border: 1px solid var(--blanco);
+}
+
+@media screen and (max-width: 1200px) {
+  .productos {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .caja{
+    width: 60%;
+    height: 60%;
+  }
+  .producto-1, .producto-2, .producto-3, .producto-4, .producto-5, .producto-6, .producto-7, .producto-8{
+    width: 60vw;
+    height: 60vw;
+      display: flex;
+      flex-direction: column;
+      align-items:  center;
+    }
+    .a {
+      font-size: 1.5vw;
+    }
+}
+
+@media  screen and (max-width: 500px) {
+  .seleccion {
+    margin-top: 8em;
+  }
+  .seleccion p{
+    font-size: 2vw;
+  }
+  .texto h1 {
+    font-size:  1.2em;
+  }
+  .texto h2 {
+    font-size: 0.7em;
+  }
+  footer{
+    font-size: small;
+  }
+  .icons{
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+
+  }
+  .icons a{
+    font-size: 2.5vw;
+  }
+}

@@ -1,0 +1,310 @@
+body {
+  margin:0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #7a7a7a8e;
+  justify-content: center;
+}
+
+
+/* CreeaciÃ³n de variables como color  */
+:root{
+  --verde-oscuro: #023c40;
+  --naranja-opaco: #e3c467d0;
+  --blanco: #ffffff;
+  --negro: #000000;
+  --azul: #256eff;
+}
+
+
+/* Cambio */
+header {
+  display: flexbox;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--naranja-opaco);
+  position: fixed;
+  top: 0;
+
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  background-color: var(--naranja-opaco);
+  color: #023c40;
+  text-align: center;
+  font-size: 118%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  bottom: 0;
+  margin-top: 100px;
+}
+
+
+/* Cambio */
+.icons{
+  display: flex;
+  justify-content: end;
+
+}
+
+.icons a{
+  border: 2px solid var(--verde-oscuro);
+  padding: 5px 7px 5px 7px;
+  margin: 8px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: var(--verde-oscuro);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.icons a:hover{
+  color: rgb(215, 229, 15);
+  background-color: #023c40;
+  font-weight: 500;
+  border: 1px solid var(--blanco);
+  transition: all 0.5s;
+}
+
+.texto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  color: var(--verde-oscuro);
+}
+
+.header h1{
+  color: var(--verde-oscuro);
+  font-size: 200%;
+  margin: 0;
+  padding: 5px;
+  border-bottom: 2px solid var(--verde-oscuro);
+}
+.header h1:hover{
+  cursor: pointer;
+  color:rgba(226, 205, 89, 0.568);
+  background-color: #023c40;
+  border: 1px solid var(--blanco);
+  
+}
+.header a {
+  text-decoration: none;
+}
+
+.header h2{
+  margin: 8px 0 0 0;
+  font-size: 120%;
+}
+
+.seleccion{
+  text-align: center;
+  margin-top: 10em;
+  padding: 7px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.seleccion p {
+  color: var(--blanco);
+  background-color: var(--verde-oscuro);
+  padding: 7px;
+  width: 35%;
+  font-size: 1vw;
+  border-radius: 10px;
+  font-weight:lighter;
+}
+
+
+
+.seleccion p:hover{
+  color: var(--naranja-opaco);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.productos {
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.icons {
+  justify-content: end;
+  margin-right: 2px;
+  margin-top: 20px;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.caja {
+  background-color:#e3c46779;
+  display: flex;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 4px 20px 0px #000000b1;
+}
+
+.producto-1 {
+  width: 70vw;
+  height: 50vw;
+    display: flex;
+    flex-direction: row;
+    align-items:  center;
+}
+
+.imagen1 {
+  border-radius: 10px;
+  box-shadow: 3px 4px 20px 0px #000000b1;
+  height: 70%;
+  width: 75%;
+  background-image: url(../imagenes/D_NQ_NP_866495-MCO51119357316_082022-O.webp);
+  background-size: cover;
+  background-position: center center;
+
+
+}
+
+.ladoImagen {
+  height: 90%;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.datosProducto {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #e3c46747;
+  border-radius: 38px;
+  width: 50vw;
+}
+.nombreProducto{
+  width: 15vw;
+}
+.precio{
+  width:30vw;
+}
+
+.boton {
+  background-color: var(--naranja-opaco);
+  color: var(--verde-oscuro);
+  font-size: 1.5vw;
+  margin-top: 5%;
+  border-radius: 10px;
+  box-shadow: 3px 4px 20px 0px #000000b1;
+  border: none;
+}
+
+
+
+
+
+p {
+  text-align: justify;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25x;
+  font-weight: bold;
+
+}
+
+.boton:hover{
+  cursor: pointer;
+  color: white;
+  background-color: #023c40;
+  transition: all 0.5s;
+}
+
+a {
+  color: rgb(22, 218, 218);
+  text-decoration: none;
+}
+
+
+h1 {
+  color: var(--verde-oscuro);
+  font-size: 2.5vw;
+  margin: 0;
+  padding: 5px;
+  border-bottom: 2px solid #023c4080;
+}
+
+h2 {
+  margin: 2px 0 0 0;
+  font-size: 1.3vw;
+  color: var(--negro);
+  margin: 0;
+  padding: 5px;
+}
+@media screen and (max-width: 1000px) {
+  .producto-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .imagen1 {
+    border-radius: 10px;
+    box-shadow: 3px 4px 20px 0px #000000b1;
+    height: 70%;
+    width: 85%;
+    background-image: url(/imagenes/D_NQ_NP_866495-MCO51119357316_082022-O.webp);
+    background-size: cover;
+    background-position: center center;  
+  }
+  footer{
+    margin-top: 100px;
+    bottom: 0;
+  }
+  .datosProducto{
+    display: flex;
+    flex-direction: row;
+  }
+  h1 {
+    color: var(--verde-oscuro);
+    font-size: 1vw;
+    margin: 0;
+    padding: 5px;
+    border-bottom: 2px solid #023c4080;
+  }
+  
+  h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.9vw;
+    margin-top: 5px;
+  }
+  
+}
+@media  screen and (max-width: 1500px) {
+  footer{
+    font-size: small;
+    bottom: 0;
+  }
+  .icons{
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+
+  }
+  .icons a{
+    font-size: 2.5vw;
+  }
+}
